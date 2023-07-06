@@ -51,6 +51,7 @@ svg {
     font-size: 24px;
     padding: 0 2rem;
     transition: all 1.5s;
+    cursor: pointer;
 }
 
 svg:hover {
@@ -62,7 +63,8 @@ nav {
     background: #0f0c4c;
     grid-area: nav;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
 }
 
 h2 {
@@ -75,6 +77,7 @@ nav a {
     text-decoration: none;
     margin: 10px;
     font-weight: 400;
+    font-size: 20px;
 }
 
 nav a:hover {
