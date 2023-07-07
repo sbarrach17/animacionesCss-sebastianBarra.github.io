@@ -27,11 +27,6 @@ header .logo {
     font-size: 100px;
     padding-left: 3rem;
 }
-.title {
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-}
 
 .enlaces a {
     text-decoration: none;
@@ -50,7 +45,7 @@ svg {
     fill: white;
     font-size: 24px;
     padding: 0 3rem;
-    transition: all 1.5s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -65,6 +60,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 0 0.5rem;
+    align-items: center;
 }
 
 h2 {
@@ -91,7 +87,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
-    row-gap: 3rem;
+    row-gap: 2rem;
     column-gap: 1rem;
     padding: 1rem;
     background-color: gainsboro;
@@ -105,7 +101,7 @@ main {
     height: 150px;
     object-fit: contain;
     filter: grayscale(80%);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .gallery img:hover {
@@ -264,4 +260,24 @@ a:hover {
     .icons {
         font-size: 24px;
     }
+}
+/* animation */
+.circle {
+    width: 180px;
+    animation: rotate 1.5s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circlelogo {
+    display: flex;
+    align-items: center;
 }
